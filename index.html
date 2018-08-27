@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="static/css/3rdparty/bootstrap.min.css">
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/3rdparty/popper.min.js"></script>
+	<script src="static/js/3rdparty/bootstrap.min.js"></script>
+  
+	<!-- #COMMON_DESIGN BEGIN : Carousel에 포함된 항목들이 정상적으로 보이도록 조정이 필요합니다. -->
+	<style>
+	  .carousel-inner img {
+		/*
+		width:0%;
+		height:0%;
+		*/
+	  }
+	  .carousel-caption {
+		/*
+		position:??;
+		top:0%;
+		*/
+	  }
+	</style>
+	<!-- #COMMON_DESIGN END -->
+  </head>
+  <body>
+	<div id="demo" class="carousel slide" data-ride="carousel" data-interval='false'>
+	  <ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+		<!-- #1 #2 BEGIN (날짜 시간 정보 추가하기) -->
+		<div class="carousel-item active">
+		  <img src="static/img/triangle.png">
+		  <div class="carousel-caption">
+			<h1> <!-- 오늘 몇일? 알고싶어요. 날짜 정보 넣어주세요. --></h1>
+			<h1> <!-- 지금 몇시? 알고싶어요. 시간 정보 넣어주세요. --></h1>
+		  </div>   
+		</div>
+		<!-- #1 #2 END -->
+		
+		<!-- #3 #4 BEGIN (버그가 있어요! 잘 찾아보아요 + 구글 로고 및 검색 버튼 추가) -->
+		<div class="carousel-item">
+		  <img src="static/img/triangle.png">
+		  <div class="carousel-caption">
+			<form action='https://google.com/search'>
+			  <div class='google-search-form'>
+				<a href='https://www.google.com/' class='google-logo'>
+				  <!-- 구글 로고를 추가해볼까요? -->
+				</a>
+			  <input id='inputSearch' type='text' name='query' class='form-control' placeholder="키워드를 입력하세요" 
+			  maxlength=1 autofocus='false'>
+			  </div>
+			  <!--  검색 버튼을 추가해볼까요? -->
+			</form>
+		  </div>
+		</div>
+		<!-- #3 4 END -->
+		
+		<!-- #5 6 BEGIN Login Form-->
+		<div class="carousel-item">
+		  <img src="static/img/triangle.png">
+		  <div class="carousel-caption">
+			<div class="card card-container" >			  
+			  <!-- 여기 프로필 이미지를 넣어주세요 -->
+			  <img class="profile-img-card" src="" alt="Profile Card" /><br>
+			  <!-- 로그인 폼을 작성 해 주세요 -->
+			</div>	
+		  </div>   
+		</div>
+		<!-- #5 6 END -->
+	  </div>
+	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+  </body>
+</html>
+
