@@ -2,29 +2,33 @@
 <html lang="en">
   <head>
 	<title>Bootstrap Example</title>
-	<meta charset="utf-8">
+	<meta charset="euc-kr">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="static/css/3rdparty/bootstrap.min.css">
 	<script src="static/js/jquery.min.js"></script>
 	<script src="static/js/3rdparty/popper.min.js"></script>
 	<script src="static/js/3rdparty/bootstrap.min.js"></script>
-  
-	<!-- #COMMON_DESIGN BEGIN : Carouselì— í¬í•¨ëœ í•­ëª©ë“¤ì´ ì •ìƒì ìœ¼ë¡œ ë³´ì´ë„ë¡ ì¡°ì •ì´ í•„ìš”í•©ë‹ˆë‹¤. -->
+
+	<!-- #COMMON_DESIGN BEGIN : Carousel¿¡ Æ÷ÇÔµÈ Ç×¸ñµéÀÌ Á¤»óÀûÀ¸·Î º¸ÀÌµµ·Ï Á¶Á¤ÀÌ ÇÊ¿äÇÕ´Ï´Ù. -->
 	<style>
 	  .carousel-inner img {
-		/*
-		width:0%;
-		height:0%;
-		*/
+		width:100%;
+		height:100%;
 	  }
 	  .carousel-caption {
-		/*
-		position:??;
-		top:0%;
-		*/
+		position:absolute;
+		top: 50%;
 	  }
+		.profile-img-card{
+			width: 100px !important;
+			height: 100px !important;
+			border: 3px solid gray;
+			 border-radius: 50px !important;
+			 margin-left: auto;
+			 margin-right: auto;
+		}
 	</style>
-	<!-- #COMMON_DESIGN END -->
+	<!-- #COMMON_DESIGN END -->s
   </head>
   <body>
 	<div id="demo" class="carousel slide" data-ride="carousel" data-interval='false'>
@@ -34,44 +38,51 @@
 		<li data-target="#demo" data-slide-to="2"></li>
 	  </ul>
 	  <div class="carousel-inner">
-		<!-- #1 #2 BEGIN (ë‚ ì§œ ì‹œê°„ ì •ë³´ ì¶”ê°€í•˜ê¸°) -->
+		<!-- #1 #2 BEGIN (³¯Â¥ ½Ã°£ Á¤º¸ Ãß°¡ÇÏ±â) -->
 		<div class="carousel-item active">
 		  <img src="static/img/triangle.png">
 		  <div class="carousel-caption">
-			<h1> <!-- ì˜¤ëŠ˜ ëª‡ì¼? ì•Œê³ ì‹¶ì–´ìš”. ë‚ ì§œ ì •ë³´ ë„£ì–´ì£¼ì„¸ìš”. --></h1>
-			<h1> <!-- ì§€ê¸ˆ ëª‡ì‹œ? ì•Œê³ ì‹¶ì–´ìš”. ì‹œê°„ ì •ë³´ ë„£ì–´ì£¼ì„¸ìš”. --></h1>
-		  </div>   
+			<h1> <!-- ¿À´Ã ¸îÀÏ? ¾Ë°í½Í¾î¿ä. ³¯Â¥ Á¤º¸ ³Ö¾îÁÖ¼¼¿ä. --></h1>
+			<h1> <!-- Áö±Ý ¸î½Ã? ¾Ë°í½Í¾î¿ä. ½Ã°£ Á¤º¸ ³Ö¾îÁÖ¼¼¿ä. --></h1>
+		  </div>
 		</div>
 		<!-- #1 #2 END -->
-		
-		<!-- #3 #4 BEGIN (ë²„ê·¸ê°€ ìžˆì–´ìš”! ìž˜ ì°¾ì•„ë³´ì•„ìš” + êµ¬ê¸€ ë¡œê³  ë° ê²€ìƒ‰ ë²„íŠ¼ ì¶”ê°€) -->
+
+		<!-- #3 #4 BEGIN (¹ö±×°¡ ÀÖ¾î¿ä! Àß Ã£¾Æº¸¾Æ¿ä + ±¸±Û ·Î°í ¹× °Ë»ö ¹öÆ° Ãß°¡) -->
 		<div class="carousel-item">
 		  <img src="static/img/triangle.png">
 		  <div class="carousel-caption">
 			<form action='https://google.com/search'>
 			  <div class='google-search-form'>
 				<a href='https://www.google.com/' class='google-logo'>
-				  <!-- êµ¬ê¸€ ë¡œê³ ë¥¼ ì¶”ê°€í•´ë³¼ê¹Œìš”? -->
+				  <!-- ±¸±Û ·Î°í¸¦ Ãß°¡ÇØº¼±î¿ä? -->
 				</a>
-			  <input id='inputSearch' type='text' name='query' class='form-control' placeholder="í‚¤ì›Œë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”" 
+			  <input id='inputSearch' type='text' name='query' class='form-control' placeholder="Å°¿öµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä"
 			  maxlength=1 autofocus='false'>
 			  </div>
-			  <!--  ê²€ìƒ‰ ë²„íŠ¼ì„ ì¶”ê°€í•´ë³¼ê¹Œìš”? -->
+			  <!--  °Ë»ö ¹öÆ°À» Ãß°¡ÇØº¼±î¿ä? -->
 			</form>
 		  </div>
 		</div>
 		<!-- #3 4 END -->
-		
-		<!-- #5 6 BEGIN Login Form-->
+
+		<!-- #5 6 BEGIN Login Form is that all? clear!-->
 		<div class="carousel-item">
 		  <img src="static/img/triangle.png">
 		  <div class="carousel-caption">
-			<div class="card card-container" >			  
-			  <!-- ì—¬ê¸° í”„ë¡œí•„ ì´ë¯¸ì§€ë¥¼ ë„£ì–´ì£¼ì„¸ìš” -->
-			  <img class="profile-img-card" src="" alt="Profile Card" /><br>
-			  <!-- ë¡œê·¸ì¸ í¼ì„ ìž‘ì„± í•´ ì£¼ì„¸ìš” -->
-			</div>	
-		  </div>   
+			<div class="card card-container" >
+			  <!-- ¿©±â ÇÁ·ÎÇÊ ÀÌ¹ÌÁö¸¦ ³Ö¾îÁÖ¼¼¿ä --><!--./static/img/frog.png-->
+			  <img class="profile-img-card" src="./static/img/frog.png" alt="Profile Card" /><br>
+				<!-- ·Î±×ÀÎ ÆûÀ» ÀÛ¼º ÇØ ÁÖ¼¼¿ä -->
+				<input id='inputSearch' type='text' name='query' class='form-control' placeholder="Email address"
+			  maxlength=1 autofocus='false'>
+				<input id='inputSearch' type='password' name='query' class='form-control' placeholder="Password"
+				maxlength=1 autofocus='false'>
+				<button type="submit" class="form-control btn btn-primary">Login</button>
+				<a href="#">Forgot the password?</a>
+
+			</div>
+		  </div>
 		</div>
 		<!-- #5 6 END -->
 	  </div>
